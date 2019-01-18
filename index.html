@@ -8,10 +8,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-	<section class="header">
+	<header class="main-header">
 		<div class="container">
-			<a class="header-logo">ТЕХНОМАРТ</a>
+			<div class="user-nav">
+				<a href="#"class="main-header-logo">ТЕХНОМАРТ</a>
+				<form action="https://echo.htmlacademy.ru" class="user-nav-form" method="get">
+					<input type="text" placeholder="Поиск:" name="search" aria-label="Поиск по сайту" class="search-field" id="search-field">
+					<label for="search-field"></label>
+					<button type="submit" class="search-button visually-hidden">Найти</button>
+				</form>
+			</div>
 		</div>
-	</section>
+	</header>
 </body>
 </html>

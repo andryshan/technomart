@@ -39,22 +39,112 @@ body{
 	padding-left: 10px;
 }
 
-.header{
+.main-header{
 	background-color: #293449;
 }
 
-.header .container{
+.user-nav{
 	display: flex;
+	position: relative;
 }
 
-.header-logo{
+.main-header-logo{
+	position: absolute;
 	background-color: #ee3643;
 	color: white;
 	font-family: 'Cuprum', 'Arial', sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 24px;
-	box-shadow: 10px solid black;
 	width: 220px;
 	text-align: center;
+	padding: 11px 20px  7px 22px;
+	box-sizing: border-box;
+	border-bottom: 5px solid #b52933;
 }
+
+.main-header-logo:hover{
+	background-color: #ca2c37;
+}
+
+.main-header-logo:active{
+	background-color: #ba2732;
+}
+
+.user-nav-form{
+	width: 270px;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-left: 220px;
+	position: relative;
+}
+
+.user-nav-form input{
+	width: 270px;
+	outline: none;
+	padding: 11px 20px 12px 48px;
+	box-sizing: border-box;
+	border: none;
+	background-color: #293449; /*#293449 */
+	color: black;
+}
+
+.user-nav-form label::before{
+	position: absolute;
+	content: '';
+	width: 17px;
+	height: 17px;
+	top: 12px;
+	left: 17px;
+	background-image: url('../img/icon-search.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.3;
+}
+
+.search-field:hover + label::before,
+.search-field:active + label::before,
+.search-field:focus + label::before{
+	opacity: 1;
+}
+
+.search-field:focus + label::before{
+	background-image: url('../img/icon-search-focus.svg');
+}
+
+
+.user-nav-form input:focus{
+	background-color: white;
+}
+
+.user-nav-form input::-webkit-input-placeholder{
+	color: white;
+}
+
+.user-nav-form input:focus::-webkit-input-placeholder{
+	color: black;
+}
+
+
+.user-nav-form input::-moz-placeholder{
+	opacity: 1;
+	color: white;
+}
+
+.user-nav-form input:focus::-moz-placeholder{
+	color: black;
+	opacity: 1;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.user-nav-form input{
+		color: white;
+	}
+
+	.user-nav-form input:focus{
+		color: black;
+	}
+}
+
