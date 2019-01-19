@@ -8,15 +8,32 @@
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
-		<div class="container">
-			<div class="user-nav">
-				<a href="#"class="main-header-logo">ТЕХНОМАРТ</a>
-				<form action="https://echo.htmlacademy.ru" class="user-nav-form" method="get">
-					<input type="text" placeholder="Поиск:" name="search" aria-label="Поиск по сайту" class="search-field" id="search-field">
-					<label for="search-field"></label>
-					<button type="submit" class="search-button visually-hidden">Найти</button>
-				</form>
+	<header>
+		<div class="main-header-top">
+			<div class="container">
+				<div class="user-nav">
+					<a href="#"class="main-header-logo">ТЕХНОМАРТ</a>
+					<form action="https://echo.htmlacademy.ru" class="user-nav-form" method="get">
+						<input type="text" placeholder="Поиск:" name="search" aria-label="Поиск по сайту" class="search-field" id="search-field">
+						<label for="search-field"></label>
+						<button type="submit" class="search-button visually-hidden">Найти</button>
+					</form>
+					<ul class="user-nav-right">
+						<li class="bookmarks"><a href="#">Закладки: 0</a></li>
+						<li class="basket"><a href="#">Корзина: 0</a></li>
+						<li class="checkout"><a href="#">Оформить заказ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-header-center">
+			<div class="container">
+				<p class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+				<div class="wrapper-phone-adress">
+					<a href="tel:+78125550555" class="header-phone">+7 (812) 555-05-55</a>
+					<p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				</div>
 			</div>
 		</div>
 	</header>
