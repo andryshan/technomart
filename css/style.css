@@ -439,7 +439,7 @@ a{
 	padding-bottom: 20px;
 }
 
-.features-top .features-list{
+.features-list{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -555,6 +555,7 @@ a{
 
 .features-bottom{
 	display: flex;
+	justify-content: space-between;
 }
 
 .slider-list{
@@ -615,10 +616,113 @@ a{
 
 .perfo{
 	background: url('../img/perfo.jpg') no-repeat center;
+}
+
+.slide{
 	display: none;
 }
 
+.slider{
+	position: relative;
+}
 
+.slider-controls label{
+	display: inline-block;
+	vertical-align: top;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	background-color: white;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	z-index: 10;
+}
+
+.slider-controls{
+	position: absolute;
+	font-size: 0;
+	z-index: 10;
+	bottom: 24px;
+	left: 295px;
+}
+
+#product-1:checked ~ .slider-list .drills,
+#product-2:checked ~ .slider-list .perfo{
+	display: flex;
+}
+
+#product-1:checked ~ .slider-controls label[for="product-1"]::after,
+#product-2:checked ~ .slider-controls label[for="product-2"]::after{
+	content: '';
+	z-index: 20;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #ee3643;
+	top: 2px;
+	left: 2px;
+}
+
+.slider-controls label[for="product-1"]::before{
+	content: '';
+	position: absolute;
+	width: 22px;
+	height: 40px;
+	background: url('../img/icon-left.svg') no-repeat 0 0;
+	top: -106px;
+	left: -270px;
+}
+
+.slider-controls label[for="product-2"]::before{
+	content: '';
+	position: absolute;
+	width: 22px;
+	height: 40px;
+	background: url('../img/icon-right.svg') no-repeat 0 0;
+	top: -106px;
+	left: 263px;
+}
+
+
+.features-bottom-right{
+	display: flex;
+	width: 300px;
+}
+
+.features-bottom-right .features-list{
+	display: flex;
+	flex-direction: column;
+}
+
+.delivery::after{
+	content: '';
+	position: absolute;
+	top: 31px;
+	right: 31px;
+	width: 78px;
+	height: 63px;
+	background: url('../img/icon-5.svg') no-repeat 0 0;
+}
+
+.sale{
+	background-color: #8ed78f;
+}
+
+.delivery{
+	background-color: #ffc047;
+}
+
+.sale::after{
+	content: '';
+	position: absolute;
+	top: 26px;
+	left: 196px;
+	width: 59px;
+	height: 72px;
+	background: url('../img/icon-4.svg') no-repeat 0 0;
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
 	.user-nav-form input{
