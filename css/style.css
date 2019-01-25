@@ -532,6 +532,7 @@ a{
 	top: 0;
 	right: 0;
 	background: url('../img/new-flag.png') no-repeat 0 0;
+	z-index: 20;
 }
 
 .tools{
@@ -774,6 +775,7 @@ a{
 }
 
 .popular-catalog-item{
+	cursor: pointer;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -783,6 +785,15 @@ a{
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 	height: 318px;
+	position: relative;
+}
+
+.popular-catalog-item:hover{
+	box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.popular-catalog-item:hover .actions{
+	display: flex;
 }
 
 .item-image{
@@ -863,6 +874,88 @@ a{
 
 .popular-catalog-item:last-child span{
 	visibility: hidden;
+}
+
+.actions{
+	box-sizing: border-box;
+	padding-top: 44px;
+	display: none;
+	flex-direction: column;
+	width: 218px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	align-items: center;
+}
+
+.item-buy{
+	display: flex;
+	cursor: pointer;
+	border: none;
+	color: white;
+	background-color: #63a63e;
+	text-transform: uppercase;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	border-bottom: 3px solid #367315;
+	border-radius: 3px;
+	padding: 11px 47px 6px 47px;
+	margin-bottom: 7px;
+	position: relative;
+}
+
+.item-bookmarks{
+	display: flex;
+	cursor: pointer;
+	color: black;
+	background-color: white;
+	text-transform: uppercase;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	border: 3px solid #367315;
+	border-radius: 3px;
+	padding: 8px 31px 6px 31px;
+}
+
+.item-buy::before{
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	top: 11px;
+	left: 12px;
+	background: url('../img/cart-icon.svg') no-repeat 0 0;
+	opacity: 0.3;
+}
+
+.item-buy:hover::before,
+.item-buy:active::before{
+	opacity: 1;
+}
+
+.item-buy:hover{
+	background-color: #5fbb2d;
+}
+
+.item-buy:active{
+	background-color: #518534;
+	outline: none;
+}
+
+.item-bookmarks:hover{
+	border: 3px solid #32425c;
+}
+
+.item-bookmarks:active{
+	border: 3px solid #c1c6ce;
+	color: #c1c6ce;
+	outline: none;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
