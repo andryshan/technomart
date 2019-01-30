@@ -1300,6 +1300,234 @@ a{
 	padding: 11px 0;
 }
 
+.main-footer{
+	background: linear-gradient(to bottom, #32425c 193px, #293449 193px);
+}
+
+.main-footer-top{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.main-footer-top > a{
+	width: 220px;
+	display: flex;
+	background-color: #ee3643;
+	border-bottom: 5px solid #b52933;
+	padding: 21px 41px 21px 41px;
+	box-sizing: border-box;
+}
+
+.footer-nav{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: white;
+	display: flex;
+	width: 560px;
+	flex-wrap: wrap;
+	padding-top: 18px;
+}
+
+.footer-nav a{
+	color: white;
+	display: flex;
+	padding: 20px 46px 20px 13px;
+}
+
+.footer-nav li:last-of-type a{
+	padding: 20px 0px 20px 12px;
+}
+
+.main-footer-center{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 50px;
+}
+
+.wrapper-adress-phone{
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: white;
+	width: 340px;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-adress{
+	margin: 0;
+	padding-top: 13px;
+	padding-left: 3px;
+}
+
+.footer-phone{
+	margin: 0;
+	color: white;
+	padding-left: 3px;
+}
+
+
+.spec-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	display: flex;
+	align-items: flex-start;
+	width: 540px;
+	flex-wrap: wrap;
+}
+
+.spec-list a{
+	display: flex;
+	color: #ffd180;
+	padding: 14px 44px 14px 15px;
+}
+
+
+.spec-list li:last-child a{
+	padding: 14px 0px 14px 16px;
+}
+
+.main-footer-top > a:hover{
+	background-color: #ca2c37;
+}
+
+.main-footer-top > a:active{
+	background-color: #ba2732;
+}
+
+.footer-nav a:hover{
+	text-decoration: underline;
+}
+
+.spec-list a:hover{
+	text-decoration: underline;
+}
+
+.footer-nav a:active{
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+.spec-list a:active{
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+.main-footer-bottom{
+	padding-top: 25px;
+	display: flex;
+	padding-bottom: 20px;
+}
+
+.footer-bottom-copyright{
+	display: flex;
+	width: 240px;
+	margin: 0;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-right: 151px;
+}
+
+.social-list{
+	display: flex;
+	align-items: flex-start;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 160px;
+	box-sizing: border-box;
+	margin-right: auto;
+}
+
+.social-btn{
+	display: flex;
+	background-color: #212a3a;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.social-btn:hover{
+	background-color: #ee3643;
+}
+
+.social-list li{
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-right: 5px;
+}
+
+.social-vk{
+	background-image: url('../img/vk-icon.svg');
+	background-repeat: no-repeat; 
+	background-position: 50% 50%;
+}
+
+.social-fb{
+	background-image: url('../img/fb-icon.svg');
+	background-repeat: no-repeat; 
+	background-position: 50% 50%;
+}
+ 
+.social-inst{
+	background-image: url('../img/insta-icon.svg');
+	background-repeat: no-repeat; 
+	background-position: 50% 50%;
+}
+
+.feedback-devs{
+	width: 320px;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feedback-devs a{
+	color: #ffd180;
+}
+
+.feedback-devs a:hover{
+	text-decoration: underline;
+}
+
+.feedback-devs a:active{
+	color: #ee3643;
+}
+
+.wrapper-feedback{
+	display: flex;
+	flex-direction: column;
+	width: 140px;
+	padding: 12px 21px;
+}
+
+.wrapper-devs{
+	display: flex;
+	flex-direction: column;
+    width: 105px;
+    padding: 12px 0px 12px 27px;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
 	.user-nav-form input{
 		color: white;
@@ -1311,6 +1539,14 @@ a{
 
 	.main-nav-list .last-link{
 		padding: 20px 52px 18px 33px;
+	}
+
+	.footer-nav li:last-of-type a{
+		padding: 20px 0px 20px 10px;
+	}
+
+	.spec-list li:last-child a{
+		padding: 14px 0px 14px 14px;
 	}
 }
 
