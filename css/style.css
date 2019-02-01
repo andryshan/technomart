@@ -1528,6 +1528,168 @@ a{
     padding: 12px 0px 12px 27px;
 }
 
+.modal-form{
+	width: 620px;
+	border-top: 7px solid #ff5357;
+	display: none;
+	background-color: white;
+	z-index: 100;
+	box-sizing: border-box;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -280px;
+    margin-left: -320px; 
+}
+
+.wrapper-form{
+	padding: 47px 80px 37px 80px;
+}
+
+.appointment-item{
+	margin: 0;
+}
+
+.appointment-item:first-child{
+	margin-right: 20px;
+}
+
+.appointment-item label{
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-form span{
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 400;
+	color: black;
+	padding-bottom: 9px;
+}
+
+.appointment-item input{
+	box-sizing: border-box;
+	width: 220px;
+	border: 2px solid #dee3e4;
+	border-radius: 3px;
+	padding: 9px 13px;
+}
+
+.wrapper-input{
+	display: flex;
+	padding-bottom: 21px;
+}
+
+.appointment-item textarea{
+	width: 100%;
+	border: 2px solid #dee3e4;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding: 9px 13px;
+	min-height: 114px;
+}
+
+.appointment-item textarea:hover,
+.appointment-item input:hover{
+	border: 2px solid grey;
+}
+
+.appointment-item textarea:focus,
+.appointment-item input:focus{
+	border: 2px solid #ff5357;
+	outline: none;
+}
+
+.appointment-item input::-webkit-input-placeholder,
+.appointment-item textarea::-webkit-input-placeholder{
+	font-family: 'PT Sans', 'Arial', sans-serif;
+	color: #a9a9a9;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.appointment-item input::-moz-placeholder,
+.appointment-item textarea::-moz-placeholder{
+	font-family: 'PT Sans', 'Arial', sans-serif;
+	color: #a9a9a9;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.wrapper-button{
+	background-color: #f4f4f4;
+	padding: 36px 80px 37px 80px;
+	cursor: pointer;
+}
+
+.button-form{
+	width: 100%;
+	border: none;
+	padding: 11px 11px;
+}
+
+.modal-close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	background-color: transparent;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	font-size: 0;
+	z-index: 102;
+}
+
+.modal-close::before{
+	position: absolute;
+	content: '';
+	width: 28px;
+	height: 3px;
+	top: 13px;
+	right: 2px;
+	transform: rotate(-45deg);
+	background-color: #ff5357;
+}
+
+.modal-close::after{
+	position: absolute;
+	content: '';
+	width: 28px;
+	height: 3px;
+	top: 13px;
+	right: 2px;
+	transform: rotate(45deg);
+	background-color: #ff5357;
+}
+
+.modal-map{
+	display: flex;
+	position: fixed;
+	width: 940px;
+	top: 50%;
+	left: 50%;
+	z-index: 100;
+	margin-top: -280px;
+	margin-left: -470px;
+}
+
+.modal-map p{
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+iframe{
+	position: relative;
+	z-index: 101;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
 	.user-nav-form input{
 		color: white;
@@ -1547,6 +1709,11 @@ a{
 
 	.spec-list li:last-child a{
 		padding: 14px 0px 14px 14px;
+	}
+
+	.appointment-item input,
+	.appointment-item textarea{
+		color: #a9a9a9;
 	}
 }
 
