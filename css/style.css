@@ -2217,6 +2217,7 @@ iframe{
 .sort{
 	background-color: #f7f3ec;
 	display: flex;
+	margin-bottom: 20px;
 }
 
 .sort-title{
@@ -2272,6 +2273,7 @@ iframe{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	width: 70px;
 }
 
 .sort-up{
@@ -2306,10 +2308,50 @@ iframe{
 
 .sort-up-down li{
 	padding: 14px 13px 0 20px;
+	display: flex;
 }
 
 .sort-up-down a:hover:not(.current){
 	opacity: 0.3;
+}
+
+.catalog{
+	width: 700px;
+}
+
+.catalog-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.catalog-item{
+	cursor: pointer;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #eaeaea;
+	width: 220px;
+	box-sizing: border-box;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	min-height: 318px;
+	position: relative;
+}
+
+.catalog-item:hover{
+	box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.catalog-item:hover .actions{
+	display: flex;
+}
+
+.catalog-item:last-child span{
+	visibility: hidden;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
